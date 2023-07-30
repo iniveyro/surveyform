@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="surveyform.css">
+    </head>
+    
+    <body>
+        <main>
+            <div class="encabezado">
+                <h1 id="title">Seminar University - Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve our university's entrance seminar.</p>
+            </div>
+
+            <form id="survey-form">
+                <div class="fondo">
+                    <fieldset>
+                    <label id="name-label">Name: <input required id="name" type="text" placeholder="Enter your name"></input> *</label>
+                    <label id="sur-name">Surname: <input required type="text" placeholder="Enter your surname"></input> *</label>                
+                    <label id="email-label">Email: <input required id="email" type="email" placeholder="Enter your email"></input> *</label>
+                    <label id="number-label">Age: <input required id="number" type="number" min="18" max="120" placeholder="Enter your age"></input> *</label>
+                    </fieldset>
+                    <fieldset>
+                    <label id="titulo">Select which admission seminar you did: </label> 
+                    <label><input type="radio" name="career-type" value="ise">Information Systems Engineering</input></label>
+                    <label><input type="radio" name="career-type" value="ce">Chemical Engineering</input></label>
+                    <label><input type="radio" name="career-type" value="eme">Electromechanical Engineering</input></label>
+                    
+                    <label id="titulo">Choose how difficult the seminar was: 
+                        <select required name="difficulty" id="dropdown">
+                            <option value="">Choose one</option>
+                            <option value="1">Easy</option>
+                            <option value="2">Moderate</option>
+                            <option value="3">Hard</option>
+                            <option value="4">Very Hard</option>
+                        </select>*
+                    </label>
+
+                    <label id="titulo">Choose which were the subjects that presented you with the most difficulties: 
+                        <label><input type="checkbox" value="introduction"/>Introduction to the university career</input></label>
+                        <label><input type="checkbox" value="introduction"/>Math</input></label>
+                        <label><input type="checkbox" value="introduction"/>Physics</input></label>
+                        <label><input type="checkbox" value="introduction"/>Linguistic Communication</input></label>
+                    </label>
+                        
+                    <label id="titulo">Place tell us your experience in the seminar: <textarea rows="4" cols="30" placeholder="Tell us here..."></textarea></label>
+                    </fieldset>
+                    <fieldset>
+                    <label>
+                        <input type="checkbox" value="checkbox"/>Do you want us to notify you about future surveys by email?.</input>
+                    </label>                
+                    </fieldset>
+                    <label>
+                        <input type="submit" id="submit" value="Submit"></input>
+                    </label>
+                
+                </div>
+            </form>
+        
+        </main>
+    </body>
+    
+    <footer>
+        <p>This Survey Form is for <a href="https://www.freecodecamp.org/learn/">freeCodeCamp</a>.</p>
+        <p>Repositoriy: <a href="https://github.com/iniveyro/surveyform">GitHub</a>.</p>
+    </footer>
+
+</html>

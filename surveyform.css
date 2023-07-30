@@ -1,0 +1,73 @@
+body{
+    background: url("https://images.pexels.com/photos/2675050/pexels-photo-2675050.jpeg?cs=srgb&dl=pexels-dids-2675050.jpg&fm=jpg");
+    background-position: center;
+    background-size: 100%;
+    color: white;
+    font-family:Arial, sans-serif;
+    margin: 0;
+}
+.encabezado, footer{
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+}
+
+form{
+    position: relative;
+    align-items: center;
+}
+
+#titulo{
+    padding-top: 10px;
+}
+
+fieldset{
+    border: none;
+}
+
+#submit{
+    position: relative;
+    left: 42%;
+}
+
+.fondo{
+    margin: 0;
+    width: 500px;
+    height: auto;
+    padding: 2%;
+    background-color: hsla(0, 0%, 45%, 0.9);
+    border-radius: 20px;
+}
+
+textarea{
+    width: 100%;
+}
+
+label{
+    width: 100%;
+    display: block;
+}
+
+a{
+    color: white;
+}
+  
+a:visited{
+    color: white;
+}
+  
+a:hover{
+    color: grey;
+}
+  
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#survey-form {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
